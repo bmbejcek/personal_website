@@ -1,0 +1,90 @@
+/*
+	Altered from Jakub Hampl's "Designing a departures board with CSS3".
+	http://gamplvwan.eu/post/1488470623/designing-a-departures-board-with-css3
+*/
+
+.departure-board {
+    padding:  1.8vw;
+    display: inline-block;
+	line-height: 6.5vw;
+    -webkit-border-radius: 1.05vw;
+    -moz-border-radius: 1.05vw;
+    border-radius: 1.05vw;
+    color: #96b6b6;
+	font-family: "Montserrat";
+  font-size: 4.5vw;
+}
+
+
+.departure-board span.letter {
+	display: inline-block;
+	width: 5vw;
+	margin: 0.5vw;
+	height: 6.5vw;
+	text-align: center;
+	position: relative;
+  background: white;
+}
+
+
+.departure-board span.fold {
+	display: block;
+	position: absolute;
+	height: 0;
+	top: 3.25vw;
+}
+
+
+.departure-board span.flap {
+	display: block;
+	position: absolute;
+	top: 0vw;
+	width: 5vw;
+	height: 3.25vw;
+	margin: 0;
+	overflow: hidden;
+}
+
+
+.departure-board span.text {
+	width: 100%;
+}
+
+
+.departure-board span.bottom {
+	top: 3.25vw;
+}
+
+
+.departure-board span.bottom span.text {
+	position: relative;
+	top: -3.25vw;
+}
+
+
+
+.departure-board span.flap.falling {
+	display: none;
+	bottom: 0;
+	top: auto;
+}
+
+
+.departure-board span.flap.falling span.text {
+	-webkit-backface-visibility: hidden;
+	border-top: .15vw solid #444;
+	border-bottom: .15vw solid #444;
+    background: white;
+	display: block;
+	position: relative;
+
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	transform: scaleY(1);
+
+	-webkit-transition: -webkit-transform linear;
+	-moz-transition: -moz-transform linear;
+	-o-transition: -o-transform linear;
+	transition: transform linear;
+}

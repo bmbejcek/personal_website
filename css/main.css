@@ -1,0 +1,374 @@
+body {
+  background: #f0e0d2;
+  font-family: "Montserrat";
+  padding-top: 10px;
+  cursor: default;
+}
+
+.navbar {
+  background-color: #f0e0d2;
+}
+
+.nav-link {
+  color: #96b6b6 !important;
+  font-size: 2.8vw;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: #386161 !important;
+}
+
+#navbarNav {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-toggler {
+  border-color: rgb(150,182,182) !important;
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(150,182,182, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(56,97,97, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.face-header{
+  height: 43vw !important;
+  margin: auto !important;
+  display: block !important;
+}
+
+#name{
+  height: 35vw;
+  padding-top: 5vw;
+  padding-right: 4vw;
+}
+
+.desc {
+  font-family: "Montserrat";
+  color: #96b6b6;
+  font-size: 1.69vw;
+  margin-top: 1vw;
+  padding-right: 4vw;
+}
+
+.footer {
+  text-align: center;
+  color: #96b6b6;
+  padding-bottom: 1vw;
+  font-size: 1em;
+}
+
+#name_container{
+align-items: center !important;
+text-align: center !important;
+}
+
+#about {
+  background-color: #96b6b6;
+  width: 101.5% !important;
+}
+
+.letters {
+    background: #fff;
+    float: left;
+    height: 6vw;
+    margin: 0.75vw;
+    width: 6vw;
+    text-align: center;
+    font-size: 5vw;
+    color: #96b6b6;
+    line-height: 6vw;
+    display: inline-block !important;
+}
+
+.letter_container{
+  margin-top: 0;
+  margin-bottom: 2vw;
+  text-align: center !important;
+}
+
+.about_text{
+  color: white;
+  font-size: 1.5em !important;
+  text-align: center;
+}
+
+.emphasis {
+  font-size: 2em !important;
+  font-weight: bolder;
+}
+.about_container{
+  display: inline-block;
+  text-align: center !important;
+  align-items: center;
+}
+
+.about_header_text{
+  font-size: 6vw;
+  color: white;
+  margin-top: 0vw;
+  text-align: center !important;
+  display: block;
+  padding-top: 2vw;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+}
+
+.about_me{
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5vw;
+}
+
+.middle_about{
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.about_side{
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.text_container{
+  text-align: left;
+  font-size: 2vw;
+  margin-left: 3.8vw;
+}
+
+#projects {
+  background-color: #e6d27a;
+  display: inline-block !important;
+  text-align: center;
+  width: 101.6% !important;
+}
+
+.project_header{
+  /*border: dashed white;*/
+  border-width: 2vw !important;
+  align-items: center;
+  text-align: center;
+  display: inline-block !important;
+  margin: 7.1vw;
+  margin-bottom: 0vw;
+  margin-top: 3vw;
+}
+
+.project_header_text{
+  font-size: 6vw;
+  color: white;
+  margin-top: 0vw;
+  text-align: center;
+}
+
+.project_header_text_desc{
+  font-size: 1.75vw !important;
+  color: white;
+  text-align: center;
+}
+
+.project_container{
+  text-align: center;
+  padding-top: 1vw;
+}
+
+.project {
+  height: 25vw;
+  width: 25vw;
+  background-color: white;
+  display: inline-block;
+  margin: 2vw;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+
+.inner_project {
+  height: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  cursor: auto;
+}
+
+.inner_project_text{
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 7.5%;
+  left: 7.5%;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.project:hover .inner_project {
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    border: none;
+}
+
+.project:hover .inner_project_text {
+    -ms-transform: translate3d(0,-1.2vw,0);
+    -moz-transform: translate3d(0,-1.2vw,0);
+    -webkit-transform: translate3d(0,-1.2vw,0);
+    -o-transform: translate3d(0,-1.2vw,0);
+    transform: translate3d(0,-1.2vw,0);
+    border: none;
+}
+
+.portfolio-modal {
+  margin: 0;
+  height: 100% !important;
+  width: auto !important;
+}
+
+.modal-header {
+  border: none !important;
+  position: relative;
+}
+
+.modal-header-picture{
+  width:100% !important;
+  position: relative;
+}
+
+.modal-footer-picture{
+  width: 90% !important;
+  position: relative;
+  margin: auto;
+}
+
+.modal-title{
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 3.4em;
+}
+
+.modal-location {
+  display:block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.modal-description{
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.25em;
+}
+
+.modal-small-header{
+  display: block;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+}
+
+.modal-footer {
+  border: none !important;
+}
+
+.contact_header_text{
+  margin-top: 2vw;
+  color: #96b6b6;
+  font-size: 6vw;
+}
+
+.contact_header_text_desc{
+  color: #96b6b6;
+  font-size: 1.75vw;
+}
+
+.contact_icon{
+  color:#96b6b6;
+  padding-bottom: 3vw;
+}
+
+.contact_icon:hover{
+  color:#386161;
+}
+
+.icon_container{
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 767px) and (min-width: 575px) {
+
+  .project {
+    height: 40vw;
+    width: 40vw;
+  }
+
+  .about_side{
+    display: none !important;
+  }
+
+  .project_header_text_desc,
+  .contact_header_text_desc{
+    font-size: 3.9vw !important;
+  }
+
+  #optional{
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+
+  .face-header{
+    display: none !important;
+  }
+  #name{
+    height: 50vw;
+    margin-top: 0;
+    padding-top: 0vw;
+    padding-right: 0vw;
+  }
+  .desc {
+    font-size: 3vw;
+    margin-top: 0vw !important;
+    padding-right: 0vw;
+  }
+
+  .project {
+    height: 70vw;
+    width: 70vw;
+  }
+
+  .about_side{
+    display: none !important;
+  }
+
+  .project_header_text {
+    font-size: 5.95vw;
+  }
+
+  .project_header_text_desc,
+  .contact_header_text_desc{
+    font-size: 3.9vw !important;
+  }
+
+}

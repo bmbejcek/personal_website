@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Data Science + Design + Community">
+  <meta name="author" content="Brett Bejcek">
+  <link rel="icon" href="img/favicon.png">
+
+  <title>Brett Bejcek</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!-- Style -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- DepartureBoard -->
+  <link href="css/departureboard.css" rel="stylesheet">
+  <script src="js/departureboard.js"></script>
+
+  <!-- Autohide Navbar -->
+  <script src="js/auto_hide.js"></script>
+
+  <!-- Icon Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar sticky-top navbar-expand-md navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="img/brett3.png" class="img-responsive face-header">
+    </div>
+
+    <div class="col-sm-6" id="name_container">
+      <div>
+        <img src="img/full_name.png" class="img-responsive name" id="name">
+      </div>
+      <div>
+        <p class="desc"> DATA SCIENCE. DESIGN THINKING. SOCIAL GOOD. </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="container-fluid">
+    <p class="about_header_text"> >>>>>> ABOUT ME
+      <<<<<<</p>
+        <div class="row">
+          <div class="col-12 letter_container">
+            <div id='board'></div>
+          </div>
+          <div class="col-3 about_side">
+            <img class="img-responsive about_side" src="img/side.png" />
+          </div>
+          <div class="col-sm-12 col-md-6 middle_about">
+            <img class="img-responsive about_me" src="img/about_me2.png" />
+          </div>
+          <div class="col-3 about_side">
+            <img class="img-responsive about_side" src="img/side.png" />
+          </div>
+        </div>
+
+  </div>
+
+
+  <div id="projects" class="container-fluid">
+    <div class="project_header">
+      <p class="project_header_text"> >>>>>> PROJECTS
+        <<<<<<</p>
+          <p class="project_header_text_desc"> CHECK OUT MY WORK THAT COMBINES DATA SCIENCE, DESIGN, AND SOCIAL GOOD. </p>
+    </div>
+    <div class="row">
+      <div class="col-12 project_container">
+        <div class="project" data-toggle="modal" data-target="#newsModal">
+          <img class='inner_project' src="projects/news-bg.png" />
+          <img class='inner_project_text' src='projects/news-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#dssgModal">
+          <img class='inner_project' src="projects/dssg-bg.png" />
+          <img class='inner_project_text' src='projects/dssg-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#basicModal">
+          <img class='inner_project' src="projects/basic_needs-bg.png" />
+          <img class='inner_project_text' src='projects/basic_needs-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#ohioModal">
+          <img class='inner_project' src="projects/ohio-bg.png" />
+          <img class='inner_project_text' src='projects/ohio-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#17Modal">
+          <img class='inner_project' src="projects/datafest2017-bg.png" />
+          <img class='inner_project_text' src='projects/datafest2017-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#bondsModal">
+          <img class='inner_project' src="projects/barrybonds-bg.png" />
+          <img class='inner_project_text' src='projects/barrybonds-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#16Modal">
+          <img class='inner_project' src="projects/datafest2016-bg.png" />
+          <img class='inner_project_text' src='projects/datafest2016-txt.png' />
+        </div>
+        <div class="project" data-toggle="modal" data-target="#smartcolumbusModal">
+          <img class='inner_project' src="projects/smartcolumbus-bg.png" />
+          <img class='inner_project_text' src='projects/smartcolumbus-txt.png' />
+        </div>
+        <div class="project" id="optional" data-toggle="modal" data-target="#datacapstoneModal">
+          <img class='inner_project' src="projects/datacapstone-bg.png" />
+          <img class='inner_project_text' src='projects/datacapstone-txt.png' />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="contact" class="container-fluid">
+    <div class="row">
+      <div class="col-12 letter_container">
+        <p class="contact_header_text"> >>>>>> CONTACT ME
+          <<<<<<</p>
+            <p class="contact_header_text_desc"> GET IN TOUCH. I'D LOVE TO HEAR FROM YOU. </p>
+      </div>
+      <div class="col-3 icon_container">
+        <a href="https://www.facebook.com/brett.bejcek" target="_blank"><i class="fa fa-5x fa-facebook-square contact_icon" ></i></a>
+      </div>
+      <div class="col-3 icon_container">
+        <a href="https://github.com/bmbejcek" target="_blank"><i class="fa fa-5x fa-github-square contact_icon" ></i></a>
+      </div>
+      <div class="col-3 icon_container">
+        <a href="https://www.instagram.com/bbejcek/" target="_blank"><i class="fa fa-5x fa-instagram contact_icon" ></i></a>
+      </div>
+      <div class="col-3 icon_container">
+        <a href="https://www.linkedin.com/in/brettbejcek/" target="_blank"><i class="fa fa-5x fa-linkedin-square contact_icon" ></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- NewsBreakers Modal -->
+  <div class="modal fade" id="newsModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/news-header.png" />
+          <a class="modal-title">FAKE NEWS DETECTOR</a>
+          <a class="modal-location">SEATTLE, WASHINGTON</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description">As the winner of the 2017 Seattle Global AI Hackathon, we created a fake news detector based on a Naive Bayes Classifier that could predict whether an article was fake with 85% accuracy. The model was trained on a set of 4,000 articles and was
+            tested on a set of 1,100 articles. We then created a web demo using HTML, CSS, and Javascript with a Flask backend. Check out the source code <a href="https://github.com/bmbejcek/fakenews">here</a> and a live web demo <a href="http://newsbreakers.herokuapp.com/">here</a>.</p>
+        </div>
+        <img class="modal-footer-picture" src="projects/news.gif" />
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DSSG Modal -->
+  <div class="modal fade" id="dssgModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/dssg-header.png" />
+          <a class="modal-title">DSSG FELLOWSHIP</a>
+          <a class="modal-location">SEATTLE, WASHINGTON</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description">Vehicle cruising (individuals looking for parking and for-hire vehicles operating without a passenger) is a major contributor to traffic congestion in downtown Seattle. Still, the magnitude and location of vehicle cruising is poorly understood.
+            To get a better understanding of where vehicles cruise, we used traffic sensor data to generate most-likely paths traversed. We segmentated paths by time and method of transportation. After segmentation, we introduced metadata to describe
+            the trip and used a semi-supervised machine learning approach to label the data. Ultimately, we created an interactive heat map of downtown Seattle that can be used to visualize the relative levels of cruising.</p>
+          <p class="modal-description">This research has the potential to help transportation agencies, technology companies, and car companies predict the availability of parking and more accurately direct travelers with online, mobile, and connected tools, thereby reducing congestion
+            impacts, emissions, and fuel costs. Check out <a href="https://github.com/uwescience/TrafficCruising-DSSG2017">source code</a> and a
+            <a href="https://news.microsoft.com/features/students-create-something-really-incredible-broader-aim-help-two-cross-border-cities-thrive-together/">news article</a>.</p>
+        </div>
+        <img class="modal-footer-picture" src="projects/dssg.gif" />
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Basic Needs Modal -->
+  <div class="modal fade" id="basicModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/basic-header.png" />
+          <a class="modal-title">BASIC NEEDS</a>
+          <a class="modal-location">SEATTLE, WASHINGTON</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> As a Seattle Angel Hack Challenge Winner, Basic Needs is an SMS-based application that provides access to routing, emergency, mental health, sanitation, education, location, weather, and feedback services to vulnerable populations without wifi
+            dependency. Basic Needs addresses immediate needs, connects vulnerable populations to their needs, and initiates a dialog between cities and vulnerable populations for social engagement and improvement.
+            <a href="https://github.com/bmbejcek/basicneeds">Source code</a> is available and showcases Python utilized in conjunction Amazon Lexa and AWS Lambda.</p>
+        </div>
+        <img class="modal-footer-picture" src="projects/basic_needs.png" />
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ohio Modal -->
+  <div class="modal fade" id="ohioModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/ohio-header.png" />
+          <a class="modal-title">FOOD INSECURITY</a>
+          <a class="modal-location">COLUMBUS, OHIO</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> This visualization, second place winner, shows the disparity between access and need for food banks in Ohio. It was created by overlaying two different sources of data to see emerging trends. To create the drive time data, first, a list of census
+            tracts with center coordinates were produced. Then Python code was run to calculate driving time from that center coordinate to the nearest foodbank. This was achieved by utilizing Open Source Routing Machine. Next, we received SNAP data about
+            food insecurity from the Census. Our final step was overlaying these two data sources in QGIS to produce a meaningful visualization. <a href="https://github.com/bmbejcek/ohio-foodbank">See here</a> for source code.</p>
+        </div>
+        <img class="modal-footer-picture" src="projects/ohio.png" />
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DF17 Modal -->
+  <div class="modal fade" id="17Modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/datafest2017-header.png" />
+          <a class="modal-title">DATAFEST 2017</a>
+          <a class="modal-location">COLUMBUS, OHIO</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> This presentation, winner of best visualizations, shows insight into the data provided for the 2017 Datafest competition. We analyzed Expedia data and provided recommendations for customizing pricing based on where you book.</p>
+        </div>
+        <!-- <embed src="projects/datafest2017.pdf" type="application/pdf" width="100%" height = 600px/> -->
+        <!-- <object data="projects/datafest2017.pdf" type="application/pdf" width="100%" height="600px">
+             <p>Your web browser doesn't have a PDF plugin.
+               Instead you can <a href="projects/datafest2017.pdf">click here to
+                 download the PDF file.</a></p>
+               </object> -->
+               <object data="projects/datafest2017.pdf" type="application/pdf" width="100%" height="600px">
+       <iframe src="projects/datafest2017.pdf" width="100%" height="600px" style="border: none;">
+       This browser does not support PDFs. Please download the PDF to view it: <a href="projects/datafest2017.pdf">Download PDF</a>
+       </iframe>
+       </object>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barry Bonds Modal -->
+  <div class="modal fade" id="bondsModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/barrybonds-header.png" />
+          <a class="modal-title">BARRY BONDS ANALYSIS</a>
+          <a class="modal-location">COLUMBUS, OHIO</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> This project answers the question: "During the 2001 Season, what factors played a role in the probability of Barry Bonds getting on base?" using logit regression and generalized linear models.</p>
+        </div>
+        <!-- <embed src="projects/barrybonds.pdf" type="application/pdf" width="100%" height = 600px/> -->
+        <object data="projects/barrybonds.pdf" type="application/pdf" width="100%" height="600px">
+              <p>Your web browser doesn't have a PDF plugin.
+                Instead you can <a href="projects/barrybonds.pdf">click here to
+                  download the PDF file.</a></p>
+                </object>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Datafest2016 Modal -->
+  <div class="modal fade" id="16Modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/datafest2016-header.png" />
+          <a class="modal-title">DATAFEST 2016</a>
+          <a class="modal-location">COLUMBUS, OHIO</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> This presentation, as winner of the 2016 Datafest, explores the impact of presales on ticket profit.</p>
+        </div>
+        <!-- <embed src="projects/datafest2016.pdf" type="application/pdf" width="100%" height = 600px/> -->
+        <object data="projects/datafest2016.pdf" type="application/pdf" width="100%" height="600px">
+               <p>Your web browser doesn't have a PDF plugin.
+                 Instead you can <a href="projects/datafest2016.pdf">click here to
+                   download the PDF file.</a></p>
+                 </object>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Columbus Modal -->
+  <div class="modal fade" id="smartcolumbusModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/smartcolumbus-header.png" />
+          <a class="modal-title">SMART CITIES INNOVATION CHALLENGE</a>
+          <a class="modal-location">COLUMBUS, OHIO</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> Smart Cities Columbus partnered with the Ohio State University Leadership Capstone Class, challenging us to produce innovative ways to engage the community.</p>
+        </div>
+        <!-- <embed src="projects/smartcolumbus.pdf" type="application/pdf" width="100%" height = 600px/> -->
+        <object data="projects/smartcolumbus.pdf" type="application/pdf" width="100%" height="600px">
+                <p>Your web browser doesn't have a PDF plugin.
+                  Instead you can <a href="projects/smartcolumbus.pdf">click here to
+                    download the PDF file.</a></p>
+                  </object>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insurance Analysis Modal -->
+  <div class="modal fade" id="datacapstoneModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img class="modal-header-picture" src="projects/datacapstone-header.png" />
+          <a class="modal-title">DATA CAPSTONE</a>
+          <a class="modal-location">COLUMBUS, OHIO</a>
+          <a class="modal-small-header">DESCRIPTION</a>
+          <p class="modal-description"> As part of the Data Analytics curriculum at Ohio State, we partnered with PwC to perform analysis on poor performing segments of an insurance company.</p>
+        </div>
+        <!-- <embed src="projects/datacapstone.pdf" type="application/pdf" width="100%" height = 600px/> -->
+        <object data="projects/datacapstone.pdf" type="application/pdf" width="100%" height="600px">
+                 <p>Your web browser doesn't have a PDF plugin.
+                   Instead you can <a href="projects/datacapstone.pdf">click here to
+                     download the PDF file.</a></p>
+                   </object>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class='footer'>
+    HANDCODED BY BRETT BEJCEK 2017
+  </footer>
+
+  <script>
+    var board = new DepartureBoard(document.getElementById('board'), {
+      rowCount: 1,
+      letterCount: 15
+    });
+    var greetings = ['<  hi there  />', '<  good day  />', '<howdy partner>', '<how do you do>', '<  why hello  >',
+      '<whats shakin?>'
+    ];
+    board.setValue(greetings[0]);
+
+    for (var i = 1; i <= 1000; i++) {
+      setTimeout(function(x) {
+        return function() {
+          board.setValue(greetings[x % greetings.length]);
+        };
+      }(i), 10000 * i);
+    }
+  </script>
+
+
+
+  <script>
+    $(document).ready(function() {
+      $('body').scrollspy({
+        target: ".navbar",
+        offset: 150
+      });
+      $("#navbarNav a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            //window.location.hash = hash;
+          });
+
+        }
+      });
+    });
+  </script>
+
+  <script>
+    $(".sticky-top").autoHidingNavbar();
+  </script>
+
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111770621-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111770621-1');
+</script>
+
+
+</html>

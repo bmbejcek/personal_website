@@ -75,7 +75,7 @@ text-align: center !important;
 
 #about {
   background-color: #96b6b6;
-  width: 101.5% !important;
+  /*width: 101.5% !important;*/
 }
 
 .letters {
@@ -237,10 +237,9 @@ text-align: center !important;
     border: none;
 }
 
-.portfolio-modal {
-  margin: 0;
-  height: 100% !important;
-  width: auto !important;
+.modal{
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-header {
@@ -316,6 +315,22 @@ text-align: center !important;
 }
 @media screen and (max-width: 767px) and (min-width: 575px) {
 
+  .face-header{
+    display: none !important;
+  }
+
+  #name{
+    height: 50vw;
+    margin-top: 0;
+    padding-top: 0vw;
+    padding-right: 0vw;
+  }
+  .desc {
+    font-size: 3vw;
+    margin-top: 0vw !important;
+    padding-right: 0vw;
+  }
+
   .project {
     height: 40vw;
     width: 40vw;
@@ -341,6 +356,7 @@ text-align: center !important;
   .face-header{
     display: none !important;
   }
+
   #name{
     height: 50vw;
     margin-top: 0;

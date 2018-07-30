@@ -3,6 +3,12 @@ body {
   font-family: "Montserrat";
   padding-top: 10px;
   cursor: default;
+  transition: top 1s ease-in-out, opacity 1s ease-in-out;
+  -webkit-transition: top 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 0.0;
+  position: relative;
+  top: 50px;
+  cursor:default;
 }
 
 .navbar {

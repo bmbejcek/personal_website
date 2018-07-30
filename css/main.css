@@ -351,9 +351,10 @@ text-align: center !important;
     font-size: 3.9vw !important;
   }
 
-  #optional{
+  #optional, #board, .navbar{
     display: none !important;
   }
+
 }
 
 
@@ -391,6 +392,10 @@ text-align: center !important;
   .project_header_text_desc,
   .contact_header_text_desc{
     font-size: 3.9vw !important;
+  }
+
+  #optional, #board, .navbar{
+    display: none !important;
   }
 
 }

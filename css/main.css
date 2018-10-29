@@ -402,5 +402,11 @@ text-align: center !important;
   #optional, #board, .navbar{
     display: none !important;
   }
+  .modal-title{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+  }
 
 }
